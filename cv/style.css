@@ -1,0 +1,140 @@
+/* PROPERTIES FOR WEASYPRINT */
+@page {
+	margin: 0px;
+	padding: 0px;
+	size: A4;
+}
+
+/* NORMAL HTML&CSS PROPERTIES */
+/* * {} */
+
+h1 {
+	color: #C4965A;
+}
+
+h2 {
+	color: #21417D;
+}
+
+h3 {
+	margin-top: 1em;
+	margin-bottom: 0.25em;
+	color: #C4965A;
+}
+
+h4 {
+	margin-top: 0.8em;
+	margin-bottom: 0.20em;
+	color: #21417D;
+}
+
+p {
+	color: #21417D;
+	font-size: 0.9em;
+}
+
+a {
+	font-family: 'Courier New', Courier, monospace;
+	color: white;
+}
+
+.container {
+	display: flex;
+	background-color: black;
+	color: white;
+}
+
+/* Properties shared by both sides */
+.sides {
+	word-wrap: break-word;
+}
+
+.left-side {
+	width: 25%;
+}
+
+.infos {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.right-side {
+	width: 75%;
+	background-color: white;
+	color: black;
+	padding: 1em;
+}
+
+.left-side li {
+	font-size: 0.8em;
+}
+
+
+/* NOTE : This rule is for weasyprint pdf.
+ * it is overided by the css rule after this one for everything else
+ */
+.left-side img {
+	width: 96%;
+}
+
+.optional {
+	display: none;
+}
+
+/* Rules for everything except weasyprint pdf
+ * because weasyprint don't support @media rules
+ */
+@media screen and not ((width:210mm) and (height:297mm)) {
+	.left-side img {
+		width: 100%;
+	}
+
+	.optional {
+		display: inherit;
+	}
+}
+
+
+.title-and-list ul {
+	padding-left: 2em;
+	margin-top: 0.5em;
+}
+
+#skills .title-and-list {
+	margin-left: 1em;
+}
+
+.element {
+	display: flex;
+	flex-wrap: wrap;
+	height: 5em;
+	color: #21417D;
+	margin-left: 1em;
+}
+
+.element-title {
+	width: 100%;
+	font-weight: bold;
+}
+
+.element-desc {
+	width: 75%;
+	font-size: 0.9em;
+	/* margin-left: 1em; */
+}
+
+.element-date {
+	width: 25%;
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: right;
+}
+
+
+/* rules for screen in landscape mode */
+@media screen and (orientation:landscape) {
+	.container {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+}

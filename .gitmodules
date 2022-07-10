@@ -1,0 +1,6 @@
+[submodule "cv"]
+	path = cv
+	url = git@github.com:sylvere-k/cv.git
+[submodule "rapport-de-stage-ete2021"]
+	path = rapport-de-stage-ete2021
+	url = git@github.com:sylvere-k/rapport-de-stage-ete2021.git
