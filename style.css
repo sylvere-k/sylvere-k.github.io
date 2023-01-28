@@ -38,6 +38,10 @@ a {
 	color: white;
 }
 
+.mt-1 {
+	margin-top: 1.5em;
+}
+
 .container {
 	display: flex;
 	background-color: black;
@@ -115,6 +119,10 @@ a {
 .element-title {
 	width: 100%;
 	font-weight: bold;
+}
+
+.element-subtitle {
+	width: 100%;
 }
 
 .element-desc {
