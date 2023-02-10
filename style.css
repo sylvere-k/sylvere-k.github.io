@@ -131,33 +131,37 @@ ul#contacts li {
 	margin-left: 1em;
 }
 
+.element-date {
+	width: 12.5%;
+	font-size: 0.9em;
+	font-style: italic;
+	text-align: left;
+}
+
 .element-title {
-	width: 100%;
+	width: 37.5%;
 	font-weight: bold;
 	font-size: 0.8em;
 }
 
-.element-subtitle {
-	width: 100%;
-	font-size: 0.7em;
-}
-
-a.element-subtitle {
-	color: #21417D;
-}
-
-.element-desc {
-	width: 75%;
+.element-location {
+	width: 37.5%;
 	font-size: 0.6em;
 	/* margin-left: 1em; */
 }
 
-.element-date {
-	width: 25%;
-	font-size: 0.9em;
-	font-style: italic;
-	text-align: right;
+.element-description {
+	width: 50%;
+	font-size: 0.7em;
 }
+
+a.element-description {
+	color: #21417D;
+}
+
+
+
+
 
 
 /* rules for screen in landscape mode */
