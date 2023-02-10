@@ -35,11 +35,8 @@ p {
 
 a {
 	font-family: 'Courier New', Courier, monospace;
-	color: white;
-}
-
-.mt-1 {
-	margin-top: 1.5em;
+	/* color: white; */
+	color: black;
 }
 
 .container {
@@ -76,19 +73,21 @@ a {
 
 /* NOTE : This rule is for weasyprint pdf.
  * it is overided by the css rule after this one for everything else
+ * new NOTE : doesn't seems necessary now
  */
-.left-side img {
+/* .left-side img {
 	width: 96%;
-}
+} */
 
-.optional {
+/* .optional {
 	display: none;
-}
+} */
 
 /* Rules for everything except weasyprint pdf
  * because weasyprint don't support @media rules
+ * new NOTE : doesn't seems necessary now
  */
-@media screen and not ((width:210mm) and (height:297mm)) {
+/* @media screen and not ((width:210mm) and (height:297mm)) {
 	.left-side img {
 		width: 100%;
 	}
@@ -96,12 +95,28 @@ a {
 	.optional {
 		display: inherit;
 	}
+} */
+
+/* 
+* new NOTE : fix for both weasyprint and web browser
+*/
+.left-side img {
+	width: 100%;
 }
 
+div.title-and-list {
+	height: fit-content;
+	width: auto;
+}
 
 .title-and-list ul {
 	padding-left: 1.25em;
 	margin-top: 0.5em;
+}
+
+ul#contacts li {
+	display: inline;
+	font-size: 0.8em;
 }
 
 #skills .title-and-list {
@@ -119,15 +134,21 @@ a {
 .element-title {
 	width: 100%;
 	font-weight: bold;
+	font-size: 0.8em;
 }
 
 .element-subtitle {
 	width: 100%;
+	font-size: 0.7em;
+}
+
+a.element-subtitle {
+	color: #21417D;
 }
 
 .element-desc {
 	width: 75%;
-	font-size: 0.9em;
+	font-size: 0.6em;
 	/* margin-left: 1em; */
 }
 
