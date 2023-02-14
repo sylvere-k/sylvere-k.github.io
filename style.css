@@ -9,27 +9,32 @@
 /* * {} */
 
 h1 {
-	color: #C4965A;
+	/* color: #C4965A; */
+	color: #d15649;
+	text-align: center;
 }
 
 h2 {
-	color: #21417D;
+	color: #3c2c3e;
+	text-align: center;
 }
 
 h3 {
 	margin-top: 0.25em;
 	margin-bottom: 0.25em;
+	/* color: #d15649; */
 	color: #C4965A;
 }
 
 h4 {
 	margin-top: 0.8em;
 	margin-bottom: 0.20em;
-	color: #21417D;
+	/* color: #d15649; */
+	color: #C4965A;
 }
 
 p {
-	color: #21417D;
+	color: #3c2c3e;
 	font-size: 0.9em;
 }
 
@@ -41,7 +46,8 @@ a {
 
 .container {
 	display: flex;
-	background-color: black;
+	background-color: #262834;
+
 	color: white;
 }
 
@@ -52,6 +58,7 @@ a {
 
 .left-side {
 	width: 25%;
+	background-color: #3c2c3e;
 }
 
 .infos {
@@ -61,7 +68,7 @@ a {
 
 .right-side {
 	width: 75%;
-	background-color: white;
+	background-color: #eee8c6;
 	color: black;
 	padding: 1em;
 }
@@ -114,9 +121,17 @@ div.title-and-list {
 	margin-top: 0.5em;
 }
 
-ul#contacts li {
-	display: inline;
+div#contacts {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 0.8em;
+}
+
+div#contacts div {
+	margin-left: 1em;
+	margin-right: 1em;
 }
 
 #skills .title-and-list {
@@ -127,37 +142,55 @@ ul#contacts li {
 	display: flex;
 	flex-wrap: wrap;
 	height: 5em;
-	color: #21417D;
+	color: #3c2c3e;
 	margin-left: 1em;
 }
 
 .element-date {
-	width: 12.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 10%;
 	font-size: 0.9em;
-	font-style: italic;
-	text-align: left;
+	border-right: 0.15em solid #d07e49;
+	/* font-weight: bold; */
 }
 
 .element-title {
-	width: 37.5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	width: 32.5%;
 	font-weight: bold;
 	font-size: 0.8em;
 }
 
 .element-location {
-	width: 37.5%;
+	display: flex;
+	justify-content: left;
+	align-items: top;
+	margin-left: 12.5%;
+	width: 32.5%;
 	font-size: 0.6em;
 	/* margin-left: 1em; */
 }
 
 .element-description {
-	width: 50%;
+	display: flex;
+	padding-left: 2.5%;
+	justify-content: left;
+	align-items: center;
+	width: 47.5%;
 	font-size: 0.7em;
+	border-left: 0.15em solid #d07e49;
+
 }
 
-a.element-description {
+/* a.element-description {
 	color: #21417D;
-}
+} */
 
 
 
