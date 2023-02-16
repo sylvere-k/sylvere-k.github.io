@@ -9,7 +9,6 @@
 /* * {} */
 
 h1 {
-	/* color: #C4965A; */
 	color: #d15649;
 	text-align: center;
 }
@@ -22,25 +21,23 @@ h2 {
 h3 {
 	margin-top: 0.25em;
 	margin-bottom: 0.25em;
-	/* color: #d15649; */
 	color: #C4965A;
 }
 
 h4 {
 	margin-top: 0.8em;
 	margin-bottom: 0.20em;
-	/* color: #d15649; */
 	color: #C4965A;
 }
 
 p {
 	color: #3c2c3e;
+	text-align: center;
 	font-size: 0.9em;
 }
 
 a {
 	font-family: 'Courier New', Courier, monospace;
-	/* color: white; */
 	color: black;
 }
 
@@ -77,36 +74,6 @@ a {
 	font-size: 0.8em;
 }
 
-
-/* NOTE : This rule is for weasyprint pdf.
- * it is overided by the css rule after this one for everything else
- * new NOTE : doesn't seems necessary now
- */
-/* .left-side img {
-	width: 96%;
-} */
-
-/* .optional {
-	display: none;
-} */
-
-/* Rules for everything except weasyprint pdf
- * because weasyprint don't support @media rules
- * new NOTE : doesn't seems necessary now
- */
-/* @media screen and not ((width:210mm) and (height:297mm)) {
-	.left-side img {
-		width: 100%;
-	}
-
-	.optional {
-		display: inherit;
-	}
-} */
-
-/* 
-* new NOTE : fix for both weasyprint and web browser
-*/
 .left-side img {
 	width: 100%;
 }
@@ -119,6 +86,10 @@ div.title-and-list {
 .title-and-list ul {
 	padding-left: 1.25em;
 	margin-top: 0.5em;
+}
+
+.title-and-list a {
+	color: white;
 }
 
 div#contacts {
@@ -150,10 +121,10 @@ div#contacts div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	width: 10%;
 	font-size: 0.9em;
 	border-right: 0.15em solid #d07e49;
-	/* font-weight: bold; */
 }
 
 .element-title {
@@ -174,7 +145,6 @@ div#contacts div {
 	margin-left: 12.5%;
 	width: 32.5%;
 	font-size: 0.6em;
-	/* margin-left: 1em; */
 }
 
 .element-description {
@@ -187,14 +157,6 @@ div#contacts div {
 	border-left: 0.15em solid #d07e49;
 
 }
-
-/* a.element-description {
-	color: #21417D;
-} */
-
-
-
-
 
 
 /* rules for screen in landscape mode */
