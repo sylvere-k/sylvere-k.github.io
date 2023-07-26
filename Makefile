@@ -1,7 +1,7 @@
 .PHONY: all clean
 
 all:
-		weasyprint index.html -f pdf cv.pdf
+		weasyprint index.html cv.pdf
 
 
 clean:
